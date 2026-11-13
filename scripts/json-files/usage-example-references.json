@@ -30,6 +30,16 @@
     ],
     "audio": [
         {
+            "funcKey": "audio_ready",
+            "title": "Check whether the audio system is ready.",
+            "url": "/api/audio/#audio-ready",
+            "functions": [
+                "write_line",
+                "open_audio",
+                "close_audio"
+            ]
+        },
+        {
             "funcKey": "play_music_named",
             "title": "Music Playback",
             "url": "/api/audio/#play-music-named",
@@ -89,7 +99,524 @@
             ]
         }
     ],
+    "camera": [
+        {
+            "funcKey": "camera_position",
+            "title": "Display the current camera position.",
+            "url": "/api/camera/#camera-position",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "fill_circle",
+                "color_blue",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "color_black",
+                "option_to_screen",
+                "point_to_string",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "camera_x",
+            "title": "Read the camera X position while moving horizontally.",
+            "url": "/api/camera/#camera-x",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "camera_y",
+            "title": "Read the camera Y position while moving vertically.",
+            "url": "/api/camera/#camera-y",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "move_camera_by",
+            "title": "Move the camera using the arrow keys.",
+            "url": "/api/camera/#move-camera-by",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "fill_circle",
+                "color_blue",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "move_camera_to",
+            "title": "Following a Player Through a Large Game World",
+            "url": "/api/camera/#move-camera-to",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "clear_screen",
+                "color_white",
+                "draw_line",
+                "color_light_gray",
+                "fill_rectangle",
+                "color_green",
+                "fill_circle",
+                "color_red",
+                "color_orange",
+                "draw_rectangle",
+                "color_black",
+                "color_blue",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "point_on_screen",
+            "title": "Checking Whether a World Point is Visible on Screen",
+            "url": "/api/camera/#point-on-screen",
+            "functions": [
+                "open_window",
+                "load_font",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "set_camera_position",
+                "fill_circle_at_point",
+                "color_red",
+                "to_screen_point",
+                "draw_text_with_options",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_camera_position",
+            "title": "Moving the Camera to Reveal Different Parts of the World",
+            "url": "/api/camera/#set-camera-position",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "point_at",
+                "fill_rectangle",
+                "color_red",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_camera_x",
+            "title": "Set the camera X position using the arrow keys.",
+            "url": "/api/camera/#set-camera-x",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "camera_x",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_camera_y",
+            "title": "Set the camera Y position using the arrow keys.",
+            "url": "/api/camera/#set-camera-y",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_red",
+                "color_green",
+                "draw_text_no_font_no_size_with_options",
+                "camera_y",
+                "color_black",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "to_screen_x",
+            "title": "Landmark Tracker",
+            "url": "/api/camera/#to-screen-x",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen_to_white",
+                "draw_line",
+                "color_gray",
+                "fill_rectangle",
+                "color_dark_red",
+                "option_to_screen",
+                "draw_line_with_options",
+                "color_blue",
+                "draw_text_with_options_font_as_string",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "to_screen_y",
+            "title": "Balloon Height",
+            "url": "/api/camera/#to-screen-y",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen_to_white",
+                "draw_line",
+                "color_gray",
+                "fill_circle",
+                "color_red",
+                "option_to_screen",
+                "draw_line_with_options",
+                "color_blue",
+                "draw_text_with_options_font_as_string",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "to_world_x",
+            "title": "Crosshair Ruler",
+            "url": "/api/camera/#to-world-x",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen_to_white",
+                "draw_line",
+                "color_gray",
+                "draw_text_font_as_string",
+                "color_black",
+                "option_to_screen",
+                "draw_line_with_options",
+                "color_red",
+                "draw_text_with_options_font_as_string",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "to_world_y",
+            "title": "Depth Gauge",
+            "url": "/api/camera/#to-world-y",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "move_camera_by",
+                "clear_screen_to_white",
+                "draw_line",
+                "color_gray",
+                "draw_text_font_as_string",
+                "color_black",
+                "option_to_screen",
+                "draw_line_with_options",
+                "color_red",
+                "draw_text_with_options_font_as_string",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        }
+    ],
     "color": [
+        {
+            "funcKey": "brightness_of",
+            "title": "Purple Shade Brightness",
+            "url": "/api/color/#brightness-of",
+            "functions": [
+                "open_window",
+                "rgba_color",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_black",
+            "title": "Black and White Checkerboard",
+            "url": "/api/color/#color-black",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_blue",
+            "title": "Blue Bar Chart",
+            "url": "/api/color/#color-blue",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "draw_line",
+                "color_black",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_blue_violet",
+            "title": "Blue Violet Target Rings",
+            "url": "/api/color/#color-blue-violet",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_circle",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_bright_green",
+            "title": "Bright Green Traffic Light",
+            "url": "/api/color/#color-bright-green",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_black",
+                "fill_circle",
+                "color_dark_gray",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_maroon",
+            "title": "Color Maroon",
+            "url": "/api/color/#color-maroon",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rgb_color",
+                "fill_rectangle",
+                "fill_circle",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "color_to_string",
+            "title": "Draws five coloured rectangles and displays the hex string representation of each colour using color_to_string.",
+            "url": "/api/color/#color-to-string",
+            "functions": [
+                "open_window",
+                "color_red",
+                "color_green",
+                "color_blue",
+                "color_orange",
+                "color_purple",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_rectangle",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "green_of",
+            "title": "Exploring Shades of Green",
+            "url": "/api/color/#green-of",
+            "functions": [
+                "open_window",
+                "rgb_color",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "draw_text_font_as_string",
+                "color_black",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "hsb_color",
+            "title": "Interactive HSB Color",
+            "url": "/api/color/#hsb-color",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "max",
+                "min",
+                "clear_screen",
+                "color_black",
+                "fill_rectangle",
+                "draw_text_no_font_no_size",
+                "color_white",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "hue_of",
+            "title": "Read the Hue of a Color",
+            "url": "/api/color/#hue-of",
+            "functions": [
+                "main",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "mouse_x",
+                "screen_width",
+                "hsb_color",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "draw_rectangle",
+                "color_black",
+                "draw_text",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "red_of",
+            "title": "Exploring Shades of Red",
+            "url": "/api/color/#red-of",
+            "functions": [
+                "open_window",
+                "rgb_color",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "draw_text_font_as_string",
+                "color_black",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "saturation_of",
+            "title": "Draws a rectangle in a random colour. The colour's saturation value is displayed on screen",
+            "url": "/api/color/#saturation-of",
+            "functions": [
+                "open_window",
+                "random_rgb_color",
+                "round",
+                "rectangle_from",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle_record",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "red_of",
+                "green_of",
+                "blue_of",
+                "alpha_of",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
         {
             "funcKey": "string_to_color",
             "title": "Color from Hex Code",
@@ -108,6 +635,123 @@
                 "refresh_screen",
                 "delay",
                 "close_all_windows"
+            ]
+        }
+    ],
+    "generative_ai": [
+        {
+            "funcKey": "conversation_add_message",
+            "title": "Splashwood Village Guide - Context-Aware AI NPC Dialogue",
+            "url": "/api/generative-ai/#conversation-add-message",
+            "functions": [
+                "ask_npc",
+                "conversation_is_replying",
+                "delay",
+                "conversation_get_reply",
+                "write_line",
+                "create_conversation",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "conversation_get_reply_piece",
+            "title": "Streaming AI Response",
+            "url": "/api/generative-ai/#conversation-get-reply-piece",
+            "functions": [
+                "create_conversation",
+                "write_line",
+                "conversation_add_message",
+                "conversation_is_thinking",
+                "write",
+                "delay",
+                "conversation_is_replying",
+                "reply",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "conversation_is_replying",
+            "title": "Watching an AI Reply in Progress",
+            "url": "/api/generative-ai/#conversation-is-replying",
+            "functions": [
+                "create_conversation",
+                "write_line",
+                "conversation_add_message",
+                "write",
+                "conversation_get_reply_piece",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "conversation_is_thinking",
+            "title": "Separating AI Thoughts from the Final Reply",
+            "url": "/api/generative-ai/#conversation-is-thinking",
+            "functions": [
+                "create_conversation_with_model",
+                "write_line",
+                "conversation_add_message",
+                "conversation_is_replying",
+                "conversation_get_reply_piece",
+                "write",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "create_conversation",
+            "title": "Streaming a Reply from a New Conversation",
+            "url": "/api/generative-ai/#create-conversation",
+            "functions": [
+                "write_line",
+                "conversation_add_message",
+                "conversation_is_replying",
+                "write",
+                "conversation_get_reply_piece",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "create_conversation_with_model",
+            "title": "Comparing Replies from Two AI Models",
+            "url": "/api/generative-ai/#create-conversation-with-model",
+            "functions": [
+                "write_line",
+                "conversation_add_message",
+                "conversation_get_reply",
+                "free_conversation"
+            ]
+        },
+        {
+            "funcKey": "free_all_conversations",
+            "title": "Cleaning Up Multiple AI Conversations",
+            "url": "/api/generative-ai/#free-all-conversations",
+            "functions": [
+                "create_conversation",
+                "print"
+            ]
+        },
+        {
+            "funcKey": "free_conversation",
+            "title": "Freeing a Single AI Conversation Resource",
+            "url": "/api/generative-ai/#free-conversation",
+            "functions": [
+                "create_conversation",
+                "write_line"
+            ]
+        },
+        {
+            "funcKey": "generate_text",
+            "title": "Generating Text Response from AI",
+            "url": "/api/generative-ai/#generate-text",
+            "functions": [
+                "write_line"
+            ]
+        },
+        {
+            "funcKey": "generate_text_with_tokens",
+            "title": "Generating a Story Continuation with a Token Limit",
+            "url": "/api/generative-ai/#generate-text-with-tokens",
+            "functions": [
+                "write_line"
             ]
         }
     ],
@@ -215,7 +859,7 @@
         },
         {
             "funcKey": "closest_point_on_circle",
-            "title": "Closest Point to Mouse on Circle",
+            "title": "Splashkit Function: ClosestPointOnCircle",
             "url": "/api/geometry/#closest-point-on-circle",
             "functions": [
                 "open_window",
@@ -235,8 +879,81 @@
             ]
         },
         {
+            "funcKey": "distant_point_on_circle",
+            "title": "Opposite Point to Mouse on Circle",
+            "url": "/api/geometry/#distant-point-on-circle",
+            "functions": [
+                "open_window",
+                "point_at",
+                "circle_at",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "clear_screen",
+                "color_white",
+                "draw_circle",
+                "color_black",
+                "lines",
+                "draw_line",
+                "color_gray",
+                "color_green",
+                "fill_circle",
+                "color_red",
+                "color_blue",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "inset_rectangle",
+            "title": "Shrinking a Rectangle Inward with a Controllable Inset",
+            "url": "/api/geometry/#inset-rectangle",
+            "functions": [
+                "open_window",
+                "rectangle_from",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "key_down",
+                "draw_rectangle_record",
+                "color_black",
+                "fill_rectangle_record",
+                "color_red",
+                "draw_text_no_font_no_size_with_options",
+                "to_string_from_int",
+                "option_to_screen",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "line_intersects_circle",
+            "title": "Line Intersects a Circle",
+            "url": "/api/geometry/#line-intersects-circle",
+            "functions": [
+                "open_window",
+                "point_at",
+                "circle_at",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "line_from",
+                "clear_screen",
+                "color_white",
+                "draw_circle",
+                "color_black",
+                "color_green",
+                "color_red",
+                "draw_line",
+                "draw_text_no_font_no_size",
+                "refresh_screen"
+            ]
+        },
+        {
             "funcKey": "line_intersects_rect",
-            "title": "Avoid the Rectangle",
+            "title": "Splashkit Function: LineIntersectsRect",
             "url": "/api/geometry/#line-intersects-rect",
             "functions": [
                 "open_window",
@@ -262,7 +979,7 @@
         },
         {
             "funcKey": "line_length",
-            "title": "Simple Line Length",
+            "title": "Splashkit Function: LineLength",
             "url": "/api/geometry/#line-length",
             "functions": [
                 "open_window",
@@ -279,7 +996,7 @@
         },
         {
             "funcKey": "line_length_squared",
-            "title": "Simple Line Length Squared",
+            "title": "Splashkit Function: LineLengthSquared",
             "url": "/api/geometry/#line-length-squared",
             "functions": [
                 "open_window",
@@ -296,7 +1013,7 @@
         },
         {
             "funcKey": "line_mid_point",
-            "title": "Simple Line Mid Point",
+            "title": "Splashkit Function: LineMidPoint",
             "url": "/api/geometry/#line-mid-point",
             "functions": [
                 "open_window",
@@ -314,7 +1031,7 @@
         },
         {
             "funcKey": "line_to_string",
-            "title": "Display Line Information",
+            "title": "Splashkit Function: LineToString",
             "url": "/api/geometry/#line-to-string",
             "functions": [
                 "open_window",
@@ -331,7 +1048,7 @@
         },
         {
             "funcKey": "lines_intersect",
-            "title": "Simple Line Intersect Check",
+            "title": "Splashkit Function: LinesIntersect",
             "url": "/api/geometry/#lines-intersect",
             "functions": [
                 "open_window",
@@ -350,7 +1067,7 @@
         },
         {
             "funcKey": "point_at",
-            "title": "Flower Grid",
+            "title": "Splashkit Function: PointAt",
             "url": "/api/geometry/#point-at",
             "functions": [
                 "draw_flower",
@@ -367,7 +1084,7 @@
         },
         {
             "funcKey": "point_at_origin",
-            "title": "Red Dot At Origin",
+            "title": "Splashkit Function: PointAtOrigin1",
             "url": "/api/geometry/#point-at-origin",
             "functions": [
                 "open_window",
@@ -384,7 +1101,7 @@
         },
         {
             "funcKey": "point_in_circle",
-            "title": "Mouse in a Circle",
+            "title": "Splashkit Function: PointInCircle",
             "url": "/api/geometry/#point-in-circle",
             "functions": [
                 "open_window",
@@ -403,7 +1120,7 @@
         },
         {
             "funcKey": "point_in_rectangle",
-            "title": "Cursor Jail",
+            "title": "Splashkit Function: PointInRectangle",
             "url": "/api/geometry/#point-in-rectangle",
             "functions": [
                 "rectangle_from",
@@ -429,7 +1146,7 @@
         },
         {
             "funcKey": "point_in_triangle",
-            "title": "Mouse in a Triangle",
+            "title": "Splashkit Function: PointInTriangle",
             "url": "/api/geometry/#point-in-triangle",
             "functions": [
                 "triangle_from",
@@ -448,8 +1165,29 @@
             ]
         },
         {
+            "funcKey": "point_line_distance",
+            "title": "Distance from a Point to a Line",
+            "url": "/api/geometry/#point-line-distance",
+            "functions": [
+                "open_window",
+                "line_from",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "clear_screen",
+                "color_white",
+                "draw_line",
+                "color_black",
+                "fill_circle",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "color_blue",
+                "refresh_screen"
+            ]
+        },
+        {
             "funcKey": "point_on_line",
-            "title": "Mouse Point On Line?",
+            "title": "Splashkit Function: PointOnLine1",
             "url": "/api/geometry/#point-on-line",
             "functions": [
                 "line_from",
@@ -472,7 +1210,7 @@
         },
         {
             "funcKey": "point_point_angle",
-            "title": "How Does \"Point Point Angle\" Work?",
+            "title": "Splashkit Function: PointPointAngle",
             "url": "/api/geometry/#point-point-angle",
             "functions": [
                 "open_window",
@@ -508,7 +1246,7 @@
         },
         {
             "funcKey": "point_point_distance",
-            "title": "Distance To Center",
+            "title": "Splashkit Function: PointPointDistance",
             "url": "/api/geometry/#point-point-distance",
             "functions": [
                 "open_window",
@@ -530,7 +1268,7 @@
         },
         {
             "funcKey": "point_to_string",
-            "title": "Mouse Click Location",
+            "title": "Splashkit Function: PointToString",
             "url": "/api/geometry/#point-to-string",
             "functions": [
                 "open_window",
@@ -548,7 +1286,7 @@
         },
         {
             "funcKey": "random_bitmap_point",
-            "title": "Random Triangles",
+            "title": "Splashkit Function: RandomBitmapPoint",
             "url": "/api/geometry/#random-bitmap-point",
             "functions": [
                 "open_window",
@@ -566,7 +1304,7 @@
         },
         {
             "funcKey": "random_screen_point",
-            "title": "Stars in the Sky",
+            "title": "Splashkit Function: RandomScreenPoint",
             "url": "/api/geometry/#random-screen-point",
             "functions": [
                 "open_window",
@@ -581,7 +1319,7 @@
         },
         {
             "funcKey": "random_window_point",
-            "title": "Random Portals",
+            "title": "Splashkit Function: RandomWindowPoint",
             "url": "/api/geometry/#random-window-point",
             "functions": [
                 "open_window",
@@ -598,8 +1336,133 @@
             ]
         },
         {
+            "funcKey": "rectangle_around_circle",
+            "title": "Splashkit Function: RectangleAround",
+            "url": "/api/geometry/#rectangle-around-circle",
+            "functions": [
+                "open_window",
+                "create_timer",
+                "start_timer",
+                "quit_requested",
+                "point_at",
+                "cosine",
+                "sine",
+                "circle_at",
+                "timer_ticks",
+                "reset_timer",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_rectangle_record",
+                "color_black",
+                "fill_circle_record",
+                "color_red",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "rectangle_bottom",
+            "title": "Bottom Edge of a Moving Rectangle",
+            "url": "/api/geometry/#rectangle-bottom",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rectangle_from",
+                "draw_rectangle_record",
+                "color_black",
+                "draw_line",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "rectangle_center",
+            "title": "Center Point of a Moving Rectangle",
+            "url": "/api/geometry/#rectangle-center",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rectangle_from",
+                "draw_rectangle_record",
+                "color_black",
+                "fill_circle_at_point",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "rectangle_left",
+            "title": "Left Edge of a Moving Rectangle",
+            "url": "/api/geometry/#rectangle-left",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rectangle_from",
+                "draw_rectangle_record",
+                "color_black",
+                "draw_line",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "rectangle_right",
+            "title": "Right Edge of a Moving Rectangle",
+            "url": "/api/geometry/#rectangle-right",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rectangle_from",
+                "draw_rectangle_record",
+                "color_black",
+                "draw_line",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "rectangle_top",
+            "title": "Top Edge of a Moving Rectangle",
+            "url": "/api/geometry/#rectangle-top",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "rectangle_from",
+                "draw_rectangle_record",
+                "color_black",
+                "draw_line",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "same_point",
-            "title": "Point 2D Guessing Game",
+            "title": "Splashkit Function: SamePoint",
             "url": "/api/geometry/#same-point",
             "functions": [
                 "get_point",
@@ -612,6 +1475,175 @@
                 "point_at",
                 "main",
                 "inside"
+            ]
+        },
+        {
+            "funcKey": "triangle_barycenter",
+            "title": "Finding the Barycenter of a Triangle",
+            "url": "/api/geometry/#triangle-barycenter",
+            "functions": [
+                "open_window",
+                "triangle_from_coordinates",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "fill_triangle_record",
+                "color_light_blue",
+                "draw_triangle_record",
+                "color_black",
+                "fill_circle",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "triangle_quad_intersect",
+            "title": "Triangle and Quad Collision",
+            "url": "/api/geometry/#triangle-quad-intersect",
+            "functions": [
+                "open_window",
+                "quad_from",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "triangle_from_coordinates",
+                "clear_screen",
+                "color_white",
+                "fill_quad",
+                "color_light_gray",
+                "draw_quad",
+                "color_black",
+                "fill_triangle_record",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "color_blue",
+                "draw_triangle_record",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "triangle_ray_intersection",
+            "title": "Interactive Triangle Ray Intersection",
+            "url": "/api/geometry/#triangle-ray-intersection",
+            "functions": [
+                "open_window",
+                "point_at",
+                "triangle_from",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "vector_to",
+                "clear_screen_to_white",
+                "fill_triangle_record",
+                "color_green",
+                "draw_text_no_font_no_size",
+                "color_red",
+                "draw_triangle_record",
+                "color_black",
+                "draw_circle",
+                "color_blue",
+                "draw_line",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "triangle_rectangle_intersect",
+            "title": "Detecting When a Triangle Intersects a Rectangle",
+            "url": "/api/geometry/#triangle-rectangle-intersect",
+            "functions": [
+                "open_window",
+                "rectangle_from",
+                "quit_requested",
+                "process_events",
+                "mouse_x",
+                "mouse_y",
+                "triangle_from",
+                "point_at",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle",
+                "color_gray",
+                "draw_rectangle",
+                "color_black",
+                "fill_triangle",
+                "color_red",
+                "color_blue",
+                "draw_triangle",
+                "draw_text_no_font_no_size",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "triangle_to_string",
+            "title": "Triangle To String",
+            "url": "/api/geometry/#triangle-to-string",
+            "functions": [
+                "open_window",
+                "triangle_from",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_triangle",
+                "color_blue",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "refresh_screen"
+            ]
+        },
+        {
+            "funcKey": "triangles_intersect",
+            "title": "Moving Triangle Collision Check",
+            "url": "/api/geometry/#triangles-intersect",
+            "functions": [
+                "open_window",
+                "triangle_from",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "clear_screen",
+                "color_white",
+                "draw_triangle",
+                "color_blue",
+                "color_red",
+                "draw_text_font_as_string",
+                "color_green",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "widest_points",
+            "title": "Widest Points on a Circle",
+            "url": "/api/geometry/#widest-points",
+            "functions": [
+                "open_window",
+                "circle_at",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "center_point",
+                "mouse_position",
+                "vector_point_to_point",
+                "clear_screen",
+                "color_white",
+                "draw_circle",
+                "color_black",
+                "draw_line",
+                "color_gray",
+                "color_blue",
+                "fill_circle",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen"
             ]
         }
     ],
@@ -635,6 +1667,24 @@
             ]
         },
         {
+            "funcKey": "bitmap_center",
+            "title": "Draw a bitmap with a red dot at its center\r",
+            "url": "/api/graphics/#bitmap-center",
+            "functions": [
+                "open_window",
+                "load_bitmap",
+                "clear_screen",
+                "color_white",
+                "draw_bitmap",
+                "fill_circle_record",
+                "color_red",
+                "circle_at",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "clear_screen",
             "title": "Background Color",
             "url": "/api/graphics/#clear-screen",
@@ -643,6 +1693,23 @@
                 "color_blue",
                 "refresh_screen",
                 "delay",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "draw_bitmap",
+            "title": "Parallax Alley at Dusk",
+            "url": "/api/graphics/#draw-bitmap",
+            "functions": [
+                "open_window",
+                "load_bitmap",
+                "rgba_color",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_line",
+                "refresh_screen_with_target_fps",
+                "free_all_bitmaps",
                 "close_all_windows"
             ]
         },
@@ -668,6 +1735,30 @@
                 "color_black",
                 "delay",
                 "SplashKit"
+            ]
+        },
+        {
+            "funcKey": "draw_circle",
+            "title": "Circle Showcase",
+            "url": "/api/graphics/#draw-circle",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_circle",
+                "color_red",
+                "color_blue",
+                "color_green",
+                "color_orange",
+                "color_purple",
+                "random_rgb_color",
+                "refresh_screen",
+                "delay",
+                "close_all_windows",
+                "quit_requested",
+                "process_events",
+                "refresh_screen_with_target_fps",
+                "key_down"
             ]
         },
         {
@@ -741,23 +1832,15 @@
         },
         {
             "funcKey": "draw_line",
-            "title": "Colourful Starburst",
+            "title": "Draw a red line across the screen",
             "url": "/api/graphics/#draw-line",
             "functions": [
                 "open_window",
-                "clear_screen",
-                "color_black",
-                "color_yellow",
-                "color_green",
-                "color_teal",
-                "color_blue",
-                "color_violet",
-                "color_purple",
-                "color_pink",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
                 "color_red",
-                "color_orange",
-                "refresh_screen",
-                "delay",
+                "refresh_screen_with_target_fps",
                 "close_all_windows"
             ]
         },
@@ -1244,6 +2327,26 @@
             ]
         },
         {
+            "funcKey": "font_has_size",
+            "title": "Font Size Checker",
+            "url": "/api/graphics/#font-has-size",
+            "functions": [
+                "availability_text",
+                "open_window",
+                "load_font",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text",
+                "color_black",
+                "color_blue",
+                "color_red",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "free_font",
             "title": "Freeing Fonts",
             "url": "/api/graphics/#free-font",
@@ -1259,6 +2362,25 @@
                 "get_system_font",
                 "refresh_screen",
                 "key_typed",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "get_font_style",
+            "title": "The program automatically cycles through font styles for a given font (also displaying example text), with the numerical value of each style being shown on screen\r",
+            "url": "/api/graphics/#get-font-style",
+            "functions": [
+                "open_window",
+                "font_named",
+                "quit_requested",
+                "process_events",
+                "set_font_style",
+                "clear_screen_to_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "draw_text",
+                "refresh_screen",
+                "delay",
                 "close_all_windows"
             ]
         },
@@ -1351,6 +2473,185 @@
             ]
         }
     ],
+    "input": [
+        {
+            "funcKey": "any_key_pressed",
+            "title": "Any Key Press Indicator",
+            "url": "/api/input/#any-key-pressed",
+            "functions": [
+                "open_window",
+                "color_red",
+                "quit_requested",
+                "process_events",
+                "color_green",
+                "clear_screen",
+                "color_white",
+                "fill_circle",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_down",
+            "title": "Detecting Held Keys with KeyDown",
+            "url": "/api/input/#key-down",
+            "functions": [
+                "draw_key_state",
+                "color_green",
+                "color_gray",
+                "fill_circle",
+                "draw_circle",
+                "color_black",
+                "draw_text",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_name",
+            "title": "Show Pressed Key",
+            "url": "/api/input/#key-name",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "color_blue",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_released",
+            "title": "Key Release Counter",
+            "url": "/api/input/#key-released",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_down",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "color_dark_gray",
+                "color_blue",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_typed",
+            "title": "Typing Keys Once with KeyTyped",
+            "url": "/api/input/#key-typed",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "refresh_screen_with_target_fps"
+            ]
+        },
+        {
+            "funcKey": "mouse_clicked",
+            "title": "Clicking Colored Circles with MouseClicked",
+            "url": "/api/input/#mouse-clicked",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "point_in_circle",
+                "circle_at_from_points",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "color_red",
+                "draw_circle",
+                "color_blue",
+                "color_green",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "mouse_down",
+            "title": "Click and drag a circle with the mouse.",
+            "url": "/api/input/#mouse-down",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "point_in_circle",
+                "circle_at_from_points",
+                "clear_screen",
+                "color_white",
+                "fill_circle",
+                "color_red",
+                "color_blue",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "mouse_position",
+            "title": "Tracking Mouse Position in a Window",
+            "url": "/api/input/#mouse-position",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "color_blue",
+                "draw_circle",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "mouse_shown",
+            "title": "Mouse Visibility Toggle",
+            "url": "/api/input/#mouse-shown",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "show_mouse",
+                "hide_mouse",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "color_blue",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        }
+    ],
     "interface": [
         {
             "funcKey": "button",
@@ -1369,7 +2670,191 @@
                 "color_red",
                 "color_blue",
                 "color_green",
+                "draw_interface",
                 "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_interface_accent_color",
+            "title": "Comparing Interface Accent Strength",
+            "url": "/api/interface/#set-interface-accent-color",
+            "functions": [
+                "open_window",
+                "rgb_color",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "button_at_position",
+                "rectangle_from",
+                "draw_interface",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_interface_element_color",
+            "title": "Comparing Interface Element Contrast",
+            "url": "/api/interface/#set-interface-element-color",
+            "functions": [
+                "open_window",
+                "rgb_color",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "button_at_position",
+                "rectangle_from",
+                "draw_interface",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "set_interface_element_shadows",
+            "title": "Comparing Interface Button Shadows",
+            "url": "/api/interface/#set-interface-element-shadows",
+            "functions": [
+                "open_window",
+                "point_at",
+                "rgba_color",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "button_at_position",
+                "rectangle_from",
+                "draw_interface",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        }
+    ],
+    "json": [
+        {
+            "funcKey": "data_driven_dungeon",
+            "title": "Data-Driven Dungeon Integration Example",
+            "url": "/api/json/#data-driven-dungeon",
+            "functions": [
+                "main",
+                "json_from_file",
+                "json_read_string",
+                "json_read_integer",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_black",
+                "draw_text",
+                "color_white",
+                "json_read_array",
+                "json_array_size",
+                "json_read_object_at_index",
+                "json_read_number",
+                "color_green",
+                "color_red",
+                "fill_rectangle",
+                "fill_circle",
+                "color_gold",
+                "refresh_screen_with_target_fps",
+                "free_json",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "json_has_key",
+            "title": "Json Has Key",
+            "url": "/api/json/#json-has-key",
+            "functions": [
+                "create_json",
+                "json_set_string",
+                "write_line",
+                "free_json"
+            ]
+        },
+        {
+            "funcKey": "json_read_array_of_bool",
+            "title": "Badge Board",
+            "url": "/api/json/#json-read-array-of-bool",
+            "functions": [
+                "json_from_string",
+                "len",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "color_dark_green",
+                "color_gray",
+                "refresh_screen_with_target_fps",
+                "free_json",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "json_read_array_of_double",
+            "title": "Temperature Log",
+            "url": "/api/json/#json-read-array-of-double",
+            "functions": [
+                "json_from_string",
+                "len",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "free_json",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "json_read_array_of_json",
+            "title": "Score Board",
+            "url": "/api/json/#json-read-array-of-json",
+            "functions": [
+                "json_from_string",
+                "len",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "json_read_string",
+                "json_read_number_as_int",
+                "refresh_screen_with_target_fps",
+                "free_all_json",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "json_read_array_of_string",
+            "title": "Fruit Basket",
+            "url": "/api/json/#json-read-array-of-string",
+            "functions": [
+                "json_from_string",
+                "len",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "refresh_screen_with_target_fps",
+                "free_json",
                 "close_all_windows"
             ]
         }
@@ -1386,11 +2871,42 @@
             ]
         },
         {
+            "funcKey": "dec_to_ipv4",
+            "title": "Simple Decimal To IPv4 Converter",
+            "url": "/api/networking/#dec-to-ipv4",
+            "functions": [
+                "write_line",
+                "number",
+                "read_line",
+                "convert_to_integer"
+            ]
+        },
+        {
+            "funcKey": "hex_str_to_ipv4",
+            "title": "Simple Hex To IPv4 Converter",
+            "url": "/api/networking/#hex-str-to-ipv4",
+            "functions": [
+                "write_line",
+                "string",
+                "read_line"
+            ]
+        },
+        {
             "funcKey": "hex_to_dec_string",
             "title": "Simple Hexadecimal to Decimal String Converter",
             "url": "/api/networking/#hex-to-dec-string",
             "functions": [
                 "write_line",
+                "read_line"
+            ]
+        },
+        {
+            "funcKey": "hex_to_mac",
+            "title": "Simple Hex To MAC Address Converter",
+            "url": "/api/networking/#hex-to-mac",
+            "functions": [
+                "write_line",
+                "string",
                 "read_line"
             ]
         },
@@ -1413,6 +2929,99 @@
                 "format",
                 "read_line"
             ]
+        },
+        {
+            "funcKey": "is_valid_ipv4",
+            "title": "Simple IPv4 Address Checker",
+            "url": "/api/networking/#is-valid-ipv4",
+            "functions": [
+                "write_line",
+                "format",
+                "read_line"
+            ]
+        },
+        {
+            "funcKey": "is_valid_mac",
+            "title": "Simple MAC Address Checker",
+            "url": "/api/networking/#is-valid-mac",
+            "functions": [
+                "write_line",
+                "address",
+                "read_line"
+            ]
+        },
+        {
+            "funcKey": "mac_to_hex",
+            "title": "Simple MAC Address To Hex Converter",
+            "url": "/api/networking/#mac-to-hex",
+            "functions": [
+                "write_line",
+                "address",
+                "read_line"
+            ]
+        },
+        {
+            "funcKey": "message_data_bytes",
+            "title": "Reading Message Data as Bytes",
+            "url": "/api/networking/#message-data-bytes",
+            "functions": [
+                "create_server_with_port",
+                "open_connection",
+                "delay",
+                "check_network_activity",
+                "accept_all_new_connections",
+                "send_message_to_connection",
+                "read_message_from_server",
+                "print",
+                "close_all_connections",
+                "close_all_servers"
+            ]
+        },
+        {
+            "funcKey": "my_ip",
+            "title": "Show This Computer's IPv4 Address",
+            "url": "/api/networking/#my-ip",
+            "functions": [
+                "write_line"
+            ]
+        },
+        {
+            "funcKey": "send_message_to_connection",
+            "title": "UDP Telemetry Hub",
+            "url": "/api/networking/#send-message-to-connection",
+            "functions": [
+                "open_window",
+                "create_server_with_port_and_protocol",
+                "open_connection_with_protocol",
+                "position",
+                "quit_requested",
+                "process_events",
+                "check_network_activity",
+                "has_messages",
+                "read_message",
+                "message_data",
+                "len",
+                "index",
+                "float",
+                "close_message",
+                "clear_screen",
+                "color_black",
+                "fill_rectangle",
+                "rgba_color",
+                "draw_text_no_font_no_size",
+                "color_white",
+                "color_green",
+                "indicator",
+                "fill_circle",
+                "color_yellow",
+                "draw_circle",
+                "draw_rectangle",
+                "draw_line",
+                "refresh_screen_with_target_fps",
+                "close_all_connections",
+                "close_all_servers",
+                "close_all_windows"
+            ]
         }
     ],
     "physics": [
@@ -1422,30 +3031,34 @@
             "url": "/api/physics/#ray-intersection-point",
             "functions": [
                 "open_window",
+                "sqrt",
+                "rectangles",
                 "rectangle_from",
                 "line_from",
+                "len",
                 "quit_requested",
                 "process_events",
                 "mouse_position",
+                "ray",
                 "vector_from_angle",
                 "point_at",
-                "ray_intersection_point",
                 "point_point_distance",
+                "append",
                 "clear_screen",
                 "color_black",
                 "fill_triangle",
                 "rgba_color",
                 "draw_triangle",
-                "draw_line",
-                "draw_rectangle",
+                "draw_line_point_to_point",
+                "draw_rectangle_record",
                 "color_dark_gray",
-                "fill_rectangle",
+                "fill_rectangle_record",
                 "color_gray",
                 "fill_circle",
                 "color_yellow",
-                "draw_text",
+                "draw_text_no_font_no_size",
                 "color_white",
-                "refresh_screen",
+                "refresh_screen_with_target_fps",
                 "close_all_windows"
             ]
         },
@@ -1533,6 +3146,56 @@
                 "delay",
                 "close_all_windows"
             ]
+        },
+        {
+            "funcKey": "vector_from_angle",
+            "title": "Archimedes' Voyage: Exploring Buoyancy\r",
+            "url": "/api/physics/#vector-from-angle",
+            "functions": [
+                "main",
+                "open_window",
+                "create_bitmap",
+                "create_sprite",
+                "sprite_set_position",
+                "point_at",
+                "sprite_set_velocity",
+                "vector_to",
+                "rectangle_from",
+                "quit_requested",
+                "process_events",
+                "sprite_velocity",
+                "sprite_x",
+                "sprite_y",
+                "max",
+                "min",
+                "rectangles_intersect",
+                "update_sprite",
+                "clear_screen",
+                "color_sky_blue",
+                "fill_rectangle_record",
+                "rgba_color",
+                "quad_from",
+                "fill_quad",
+                "color_red",
+                "draw_quad",
+                "color_black",
+                "draw_line",
+                "fill_triangle",
+                "color_white",
+                "draw_triangle",
+                "draw_text_no_font_no_size",
+                "round",
+                "refresh_screen_with_target_fps",
+                "free_sprite",
+                "free_bitmap",
+                "key_down",
+                "screen_width",
+                "screen_height",
+                "color_blue",
+                "fill_circle",
+                "color_yellow",
+                "close_all_windows"
+            ]
         }
     ],
     "raspberry": [
@@ -1549,6 +3212,16 @@
                 "get_alpha_font_14_seg",
                 "delay",
                 "raspi_cleanup"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "funcKey": "path_to_resource",
+            "title": "Generate the path for an image resource.",
+            "url": "/api/resources/#path-to-resource",
+            "functions": [
+                "write_line"
             ]
         }
     ],
@@ -1608,6 +3281,57 @@
                 "update_sprite",
                 "refresh_screen",
                 "key_typed",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "move_sprite_to",
+            "title": "Move a Sprite to a Clicked Position",
+            "url": "/api/sprites/#move-sprite-to",
+            "functions": [
+                "open_window",
+                "load_bitmap",
+                "create_sprite",
+                "sprite_set_position",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "mouse_clicked",
+                "mouse_x",
+                "mouse_y",
+                "update_sprite",
+                "clear_screen",
+                "color_black",
+                "draw_text_no_font_no_size",
+                "color_white",
+                "draw_sprite",
+                "refresh_screen_with_target_fps",
+                "free_sprite",
+                "free_bitmap",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "sprite_add_to_velocity",
+            "title": "Accelerating a Sprite by Adding to Its Velocity with Arrow Keys",
+            "url": "/api/sprites/#sprite-add-to-velocity",
+            "functions": [
+                "open_window",
+                "create_bitmap",
+                "fill_circle_on_bitmap",
+                "color_red",
+                "create_sprite",
+                "sprite_set_position",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "key_down",
+                "vector_to",
+                "update_sprite",
+                "draw_sprite",
+                "refresh_screen_with_target_fps",
                 "close_all_windows"
             ]
         },
@@ -1729,65 +3453,74 @@
             ]
         }
     ],
-    "terminal": [
+    "timers": [
         {
-            "funcKey": "write",
-            "title": "Progress Bar Simulation",
-            "url": "/api/terminal/#write",
+            "funcKey": "create_timer",
+            "title": "Creating and Running a Simple Timer",
+            "url": "/api/timers/#create-timer",
             "functions": [
+                "open_window",
+                "start_timer",
+                "quit_requested",
+                "process_events",
+                "timer_ticks",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "format",
+                "refresh_screen_with_target_fps",
+                "free_timer"
+            ]
+        },
+        {
+            "funcKey": "resume_timer",
+            "title": "Resuming a Paused Timer",
+            "url": "/api/timers/#resume-timer",
+            "functions": [
+                "create_timer",
+                "start_timer",
                 "write_line",
-                "delay"
+                "delay",
+                "timer_ticks",
+                "pause_timer",
+                "free_timer"
             ]
         },
         {
-            "funcKey": "write_char",
-            "title": "Write Char Art",
-            "url": "/api/terminal/#write-char",
+            "funcKey": "timer_started",
+            "title": "Start-Stop Stopwatch",
+            "url": "/api/timers/#timer-started",
             "functions": [
-                "write",
-                "write_line"
+                "open_window",
+                "create_timer",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "start_timer",
+                "stop_timer",
+                "clear_screen",
+                "color_white",
+                "draw_text_font_as_string",
+                "color_green",
+                "color_red",
+                "timer_ticks",
+                "color_black",
+                "color_gray",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
             ]
-        },
-        {
-            "funcKey": "write_double",
-            "title": "Calculate the Radius of a Circle",
-            "url": "/api/terminal/#write-double",
-            "functions": [
-                "write_line",
-                "write"
-            ]
-        },
-        {
-            "funcKey": "write_int",
-            "title": "Countdown to lift off",
-            "url": "/api/terminal/#write-int",
-            "functions": [
-                "write_line",
-                "write"
-            ]
-        },
-        {
-            "funcKey": "write_line",
-            "title": "Hello World string",
-            "url": "/api/terminal/#write-line",
-            "functions": []
-        },
-        {
-            "funcKey": "write_line_empty",
-            "title": "Adding Blank Lines",
-            "url": "/api/terminal/#write-line-empty",
-            "functions": [
-                "write_line"
-            ]
-        },
-        {
-            "funcKey": "write_line_int",
-            "title": "Printing Integers",
-            "url": "/api/terminal/#write-line-int",
-            "functions": []
         }
     ],
     "utilities": [
+        {
+            "funcKey": "base64_encode",
+            "title": "Base64 Encode Example",
+            "url": "/api/utilities/#base64-encode",
+            "functions": [
+                "write_line"
+            ]
+        },
         {
             "funcKey": "contains",
             "title": "Checking if a string contains a word",
@@ -1871,6 +3604,14 @@
             ]
         },
         {
+            "funcKey": "is_number",
+            "title": "Checking if strings contain valid numbers",
+            "url": "/api/utilities/#is-number",
+            "functions": [
+                "write_line"
+            ]
+        },
+        {
             "funcKey": "length_of",
             "title": "How long is a string?",
             "url": "/api/utilities/#length-of",
@@ -1908,6 +3649,23 @@
             ]
         },
         {
+            "funcKey": "split",
+            "title": "Splitting strings using different delimiters",
+            "url": "/api/utilities/#split",
+            "functions": [
+                "write_line",
+                "len"
+            ]
+        },
+        {
+            "funcKey": "square_root",
+            "title": "Calculating the square root of numbers",
+            "url": "/api/utilities/#square-root",
+            "functions": [
+                "write_line"
+            ]
+        },
+        {
             "funcKey": "to_lowercase",
             "title": "Convert text to lowercase",
             "url": "/api/utilities/#to-lowercase",
@@ -1939,21 +3697,208 @@
             ]
         }
     ],
-    "generative_ai": [
+    "windows": [
         {
-            "funcKey": "free_conversation",
-            "title": "Freeing a Single AI Conversation Resource",
-            "url": "/api/ai/#free-conversation",
-            "usage_examples": [
-                {
-                    "name": "Freeing a Single AI Conversation Resource",
-                    "path": "generative_ai/free_conversation-1-example"
-                }
-            ],
+            "funcKey": "close_window",
+            "title": "Starts a countdown to close the window at the push of a button.",
+            "url": "/api/windows/#close-window",
             "functions": [
-                "free_conversation",
-                "create_conversation",
-                "write_line"
+                "open_window",
+                "create_timer",
+                "quit_requested",
+                "process_events",
+                "clear_window",
+                "color_white",
+                "button_at_position",
+                "rectangle_from",
+                "start_timer",
+                "draw_text_font_as_string",
+                "color_black",
+                "timer_ticks",
+                "reset_timer",
+                "draw_interface",
+                "refresh_window",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "current_window",
+            "title": "Using the Current Window Object",
+            "url": "/api/windows/#current-window",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "window_width",
+                "window_height",
+                "window_caption",
+                "is_current_window",
+                "clear_window",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_rectangle",
+                "color_blue",
+                "refresh_window_with_target_fps",
+                "close_window"
+            ]
+        },
+        {
+            "funcKey": "current_window_is_fullscreen",
+            "title": "Fullscreen Checker",
+            "url": "/api/windows/#current-window-is-fullscreen",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "current_window_toggle_fullscreen",
+                "clear_screen_to_white",
+                "draw_text_font_as_string",
+                "color_black",
+                "color_dark_gray",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "current_window_toggle_fullscreen",
+            "title": "Presentation Mode",
+            "url": "/api/windows/#current-window-toggle-fullscreen",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "current_window_is_fullscreen",
+                "clear_screen",
+                "color_black",
+                "draw_text_font_as_string",
+                "color_white",
+                "color_light_gray",
+                "color_dark_gray",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "current_window_width",
+            "title": "Show the Current Window Width",
+            "url": "/api/windows/#current-window-width",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "color_blue",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "window_has_focus",
+            "title": "Show Whether the Window Has Focus",
+            "url": "/api/windows/#window-has-focus",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "current_window",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "color_green",
+                "color_red",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "window_is_fullscreen",
+            "title": "Window Status Board",
+            "url": "/api/windows/#window-is-fullscreen",
+            "functions": [
+                "draw_window_status",
+                "clear_window",
+                "color_white",
+                "draw_text_on_window_font_as_string",
+                "color_black",
+                "color_dark_gray",
+                "refresh_window",
+                "open_window",
+                "move_window_to",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "window_toggle_fullscreen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "window_is_fullscreen_named",
+            "title": "Caption Status Light",
+            "url": "/api/windows/#window-is-fullscreen-named",
+            "functions": [
+                "open_window",
+                "move_window_to",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "window_toggle_fullscreen_named",
+                "clear_window",
+                "color_light_green",
+                "draw_text_on_window_font_as_string",
+                "color_black",
+                "color_light_gray",
+                "color_dark_gray",
+                "refresh_window",
+                "color_light_blue",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "window_toggle_fullscreen",
+            "title": "Projector Screen",
+            "url": "/api/windows/#window-toggle-fullscreen",
+            "functions": [
+                "open_window",
+                "move_window_to",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_window",
+                "color_white",
+                "draw_text_on_window_font_as_string",
+                "color_black",
+                "color_dark_gray",
+                "refresh_window",
+                "window_is_fullscreen",
+                "color_light_gray",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "window_toggle_fullscreen_named",
+            "title": "Remote Control",
+            "url": "/api/windows/#window-toggle-fullscreen-named",
+            "functions": [
+                "open_window",
+                "move_window_to",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_window",
+                "color_white",
+                "draw_text_on_window_font_as_string",
+                "color_black",
+                "color_dark_gray",
+                "refresh_window",
+                "color_light_gray",
+                "close_all_windows"
             ]
         }
     ]

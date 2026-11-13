@@ -36,5 +36,10 @@
   },
   "devDependencies": {
     "accessible-astro-components": "^3.0.1"
+  },
+  "allowScripts": {
+    "esbuild@0.25.1": true,
+    "sharp@0.34.1": true,
+    "sharp@0.33.5": true
   }
 }
